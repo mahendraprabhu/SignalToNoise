@@ -9,11 +9,12 @@ import os
 import glob
 import shutil
 
-InputDir = r'C:\Users\mramacha\Documents\Python\My Scripts\SignalToNoise\input'
-OutputDir = r'C:\Users\mramacha\Documents\Python\My Scripts\SignalToNoise\output'
-TemplateDir = r'C:\Users\mramacha\Documents\Python\My Scripts\SignalToNoise\templates'
+CurDir = os.getcwd()
+InputDir = os.path.join(CurDir,'input')
+OutputDir = os.path.join(CurDir,'output')
+TemplateDir = os.path.join(CurDir,'templates')
 
-#shutil.copy( os.path.join(TemplateDir,'template.html'),OutputDir)
+shutil.copy( os.path.join(TemplateDir,'template.html'),OutputDir)
 os.chdir(InputDir)
 FileNames = glob.glob('*.txt')
 print (FileNames)
