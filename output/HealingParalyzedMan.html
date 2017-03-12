@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Sticky notes using CSS3 and Google Fonts (Step 5)</title>
+<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+<style type="text/css">
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:3em;
+  background:#666;
+  color:#fff;
+}
+h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:13em;
+  width:13em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+ul li h2{
+  font-family: 'Coming Soon', cursive;
+  font-size:130%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p
+{
+  font-family: 'Coming Soon', cursive;
+  font-size:130%;
+}
+ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 700px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+<ul>
+	<li>
+		<a href="#">
+		<p><h2>Story of a Paralyzed Man</h2></p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>This month we will be talking about the <b>Miracles of Jesus</b> and today we are going to talk about <b>Why we need good friends </b></p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p><b>(raise your hand)</b> How many of you have a very good friend? Can you tell me why you like them? </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Jesus was hanging out with his friends. They had dinner and they all wanted to hear him speak. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>The house was so full that there was not place to stand. Not even outside the door. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>(show <b>Picture 1</b>) </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>While Jesus was teaching, some people brought a paralyzed man to see him</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p><b>(raise your hands)</b> How many of you know what <b>paralyzed</b> means? <i> Someone who cannot walk. </i></p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>(show <b>Picture 2</b>)</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He was being carried by four of his friends. But the house was full and there was no way to enter the house and see Jesus. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p><b>(raise your hands) </b>What do you think they should do?</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>While Jesus was talking suddenly something started falling from the roof. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Someone was removing the shingles on roof. Everyone was starled. What was going on?</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>These men made a hole on the roof above Jesus and they lowered the mat with the paralyzed man. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>(show <b>Picture 3</b>) </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>(show <b>Picture 4</b>) </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>When Jesus saw how much faith these men had, he said to the paralyzed man, "your sins are forgiven" </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>When the Pharisee's head this they were shocked. They did not believe that Jesus was son of God</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>(show <b>Picture 5</b>) </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Jesus always saw people's hearts. He wanted to show them that he was son of God and he can heal this cripled man</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Jesus looked at that man and said "Stand up. Take your man and walk"</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Immediately the paralyzed man stood up. Picked up his mat and walked out of the room. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>(show <b>Picture 6</b>) </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Everyone was amazed and they had never seen anything like this.</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p><b>(raise your hands) </b>What do we learn from this true story?</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Jesus was amazed at this paralyzed man's friends who did not give up</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>It was their faith that helped him to get well</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>So choose our friends wisely</p>
+		</a>	</li>
+</ul>
+<h1> Images </h1>
+<p>The following images were taken from <a href="http://sweetpublishing.com">http://sweetpublishing.com </a></p>
+<div class="gallery">
+	<a target="_blank" href= "http://distantshores.org/images/rg/41/41_Mk_02_02_RG.jpg">
+			<img alt=" Picture 1" src= "http://distantshores.org/images/rg/41/41_Mk_02_02_RG.jpg" height="500"> 
+	</a>
+<div class="desc"> Picture 1</div>
+</div>
+
+<div class="gallery">
+	<a target="_blank" href= "http://distantshores.org/images/rg/41/41_Mk_02_04_RG.jpg">
+			<img alt=" Picture 2" src= "http://distantshores.org/images/rg/41/41_Mk_02_04_RG.jpg" height="500"> 
+	</a>
+<div class="desc"> Picture 2</div>
+</div>
+
+<div class="gallery">
+	<a target="_blank" href= "http://distantshores.org/images/rg/41/41_Mk_02_05_RG.jpg">
+			<img alt=" Picture 3" src= "http://distantshores.org/images/rg/41/41_Mk_02_05_RG.jpg" height="500"> 
+	</a>
+<div class="desc"> Picture 3</div>
+</div>
+
+<div class="gallery">
+	<a target="_blank" href= "http://distantshores.org/images/rg/41/41_Mk_02_06_RG.jpg">
+			<img alt=" Picture 4" src= "http://distantshores.org/images/rg/41/41_Mk_02_06_RG.jpg" height="500"> 
+	</a>
+<div class="desc"> Picture 4</div>
+</div>
+
+<div class="gallery">
+	<a target="_blank" href= "http://distantshores.org/images/rg/41/41_Mk_02_09_RG.jpg">
+			<img alt=" Picture 5" src= "http://distantshores.org/images/rg/41/41_Mk_02_09_RG.jpg" height="500"> 
+	</a>
+<div class="desc"> Picture 5</div>
+</div>
+
+<div class="gallery">
+	<a target="_blank" href= "http://distantshores.org/images/rg/41/41_Mk_02_11_RG.jpg">
+			<img alt=" Picture 6" src= "http://distantshores.org/images/rg/41/41_Mk_02_11_RG.jpg" height="500"> 
+	</a>
+<div class="desc"> Picture 6</div>
+</div>
+
+</body>

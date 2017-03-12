@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Sticky notes using CSS3 and Google Fonts (Step 5)</title>
+<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+<style type="text/css">
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:3em;
+  background:#666;
+  color:#fff;
+}
+h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:13em;
+  width:13em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+ul li h2{
+  font-family: 'Coming Soon', cursive;
+  font-size:130%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p
+{
+  font-family: 'Coming Soon', cursive;
+  font-size:130%;
+}
+ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 700px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+<ul>
+	<li>
+		<a href="#">
+		<p> <b>(Reduce lights in the room)</b></p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>It was a dark night. Shepherd was tired. <b>(raise you hand)</b> How many of you are tired at the end of the day? </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Shepherd puts all the sheep in the sheep's pen "house". He usually has 100 sheep. He starts counting: 1, 2, 3, ... 96, 97, 98, 99 </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Shepherd started to think "I must have missed one". <b>(raise you hand)</b> Do you think he should count again. YES. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Guess what, he starts counting again: 1, 2, ... 97, 98, 99. Oh no! One sheep missing. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p><b>(raise your hand)</b> Do you think he should go and find the sheep? YES. Say louder (YES). Ok. He gets ready to start searching for the sheep. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>It starts to rain and lightning <b>(turn lights on and off to simulate lightning)</b>. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He leaves the house and starts searching the grass. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He searches near the fields. He does not find the sheep. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He searches near the trees. He does not find the sheep. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He finds his friends who are going home. He asks them if they saw a lost sheep? They say NO. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>It starts to rain more. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p><b>(Raise your hand)</b> Do you think he should give up? YES/NO Why? </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He searches for 1 hour, 2 hours ... 3 hours. No sheep. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He starts to go home. Just wait, he thinks he just heard a sound. A sheep sound. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He goes towards the sound. The sounds gets louder. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>His heart starts to beat faster and faster. He runs towards the sheep sound. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>His heart start to beat faster and faster. He runs towards the sheep sound. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He shines the flash light. He sees the sheep. Wow. But the sheep is caught in the bush. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He moves the bushes and tries to r e a c h for the sheep. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He grabs the sheeps hand and slowly bring the sheep outside the bush. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He is so relieved and HAPPY and excited. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He puts the sheep on his shoulders and goes home.</p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>He throws BBQ party because his sheep was LOST but he found it. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>Even though the sheep did not listen, the shepherd still loved the sheep. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>In the same way, God loves us and he wants to helps us when we are lost and scared. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>When he finds us, he is SO HAPPY and he throws a party. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>How may of you have seen a BAPTISM? Everytime we have a baptism, God is so happy ad throws a party. </p>
+		</a>	</li>
+	<li>
+		<a href="#">
+		<p>God thinks you are special and he loves you very much. </p>
+		</a>	</li>
+</ul>
+<h1> Images </h1>
+<p>The following images were taken from <a href="http://sweetpublishing.com">http://sweetpublishing.com </a></p>
+</body>

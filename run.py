@@ -9,9 +9,9 @@ import os
 import glob
 import shutil
 
-InputDir = r'C:\Users\mramacha\Documents\Python\My Scripts\SignalToNoise\input'
-OutputDir = r'C:\Users\mramacha\Documents\Python\My Scripts\SignalToNoise\output'
-TemplateDir = r'C:\Users\mramacha\Documents\Python\My Scripts\SignalToNoise\templates'
+InputDir = os.path.join(os.getcwd(),'input')
+OutputDir = os.path.join(os.getcwd(),'output')
+TemplateDir = os.path.join(os.getcwd(),'templates')
 
 #shutil.copy( os.path.join(TemplateDir,'template.html'),OutputDir)
 os.chdir(InputDir)
